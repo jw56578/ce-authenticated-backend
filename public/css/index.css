@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7181B8
+}
+
+.loginContainer {
+  height: 200px;
+  width: 300px;
+  max-width: 90%;
+  max-height: 50%;
+  background-color: #A7AABC;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  padding: 4px; 
+}
+
+#err {
+  font-family: 'Roboto', sans-serif;
+  color: red; 
+}
+
+.fieldWrap {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  margin-right: 3px;
+  align-self: center;
+}
+
+input {
+  height: 1.6rem;
+  width: 250px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 2px solid #7181B8;
+  border-radius: 5px;
+}
+
+.inside {
+  padding: 5px;
+}
+
+#subButton {
+  height: 2rem;
+  width: 250px;
+  max-width: 85%;
+  margin-top: 10px;
+  border-radius: 6px;
+  align-self: center;
+  font-size: 1rem;
+}
+
+
+
+
+
