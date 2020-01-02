@@ -11,6 +11,9 @@ const logger = (req, res, next) => {
 
 const authenticate = (req, res, next) => {
   let header = req.headers[ 'authorization' ];
+  if(!header){
+    res.send('not authorized');
+  }
   header = header.split(' ');
   const token = header[1];
 
