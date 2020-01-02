@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+
+  <title>Instructions</title>
+</head>
+<body style="margin-left:300px;margin-top:100px;">
+    <h1>Sign Up</h1>
+    <ol>
+      <li>Make a post request to <code>/auth/signup</code></li>
+      <li>The body of the request should be <code>{"username":"test","password":"test"}</code></li>
+    </ol>
+    <h1>Log In</h1>
+    <ol>
+      <li>Make a post request to <code>/auth/login</code></li>
+      <li>The body of the request should be <code>{"username":"test","password":"test"}</code></li>
+    </ol>
+    <h1>Create Data</h1>
+    <ol>
+      <li>Make a post request to <code>/whatever</code></li>
+      <li>Include the token in a header authorization: bearer thetoken</code></li>
+      <li>The body of the request should be <code>{"field1":"test","field2":"test"}</code></li>
+    </ol>
+    <h1>Retreive Data</h1>
+    <ol>
+      <li>Make a get request to <code>/whatever</code></li>
+      <li>Include the token in a header authorization: bearer thetoken</code></li>
+    </ol>
+</body>
+</html>
