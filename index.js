@@ -5,10 +5,28 @@ const authRouter = require('./routers/auth');
 const { authenticate } = require('./middleware')
 const app = express();
 const port = process.env.PORT || 4001;
-
+const publicdata = {
+  movies:[]
+}
 app.use(cors());
 app.use(bodyParser.json())
 app.use('/auth', authRouter)
+
+app.use((req, res, next) => {
+  if(req.path !== '/publicapi/movies'){
+    return next();
+  }
+  
+  if(req.method === "POST"){
+    publicdata.movies.push(req.body);
+    return res.json(req.body);
+  }
+  if(req.method === "GET"){
+    return res.json(publicdata.movies);
+  }
+  return res.send("not found");
+})
+
 app.use(express.static('public'));
 app.use(authenticate);
 
